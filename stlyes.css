@@ -1,0 +1,275 @@
+/* Basic styles for the navigation bar */
+header {
+  background-color: #1e1e1f;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2; 
+}
+
+
+
+
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 30px;
+}
+
+/* CSS to adjust the logo's size */
+#logo {
+  width: 100px;
+  height: auto;
+}
+.banner {
+  text-align: center;
+  font-family: sans-serif;
+  color: white; /* Text color */
+  position: relative;
+  
+ 
+  z-index: 1; /* Overlay content on top of the slideshow */
+}
+
+.banner .slideshow{
+
+  position: relative;
+}
+
+
+.banner .slideshow .slide {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner .banner-text {
+  text-align: center;
+  font-family:serif;
+  color: white; /* Text color */
+  
+  position: absolute;
+  top: 30%;
+  left: 18%;
+  transform: translate(-50%, -50%); /* Position the text box */
+  z-index: 2; /* Overlay text on top of the slideshow */
+}
+
+
+
+.banner .banner-text h1 {
+  font-style: bold; 
+  font-size: 2.8rem;
+}
+
+
+.banner .banner-text p {
+  font-style: bold; 
+  font-size:1.5rem;
+}
+
+.heading {
+  text-align: center;
+  color: black;
+
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+}
+.heading span{
+color: rgb(107, 16, 16);
+text-transform: uppercase;
+}
+
+
+
+.History .row {
+ 
+    display: flex;
+    align-items: center;
+    background-image: url("../images/red.jpg"); 
+    background-size: cover; 
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Optional, for a fixed background */
+  }
+  
+
+
+.History .row .image {
+  flex: 1;
+  padding: 2rem; 
+}
+
+.History .row .image img {
+  width: 100%;
+}
+
+.History .row .content {
+  flex: 1;
+  padding: 2rem;
+}
+
+#additional-info {
+  font-family: sans-serif; /* Specify the desired font-family */
+  font-size: 0.2rem;
+  color: #ccc;
+  padding: 1rem 0;
+  line-height: 1.1;
+}
+
+
+/* CSS to style the football container */
+.football-container {
+    width: 650px; /* Set the width and height for the circular container */
+    height: 650px;
+    perspective: 1000px; /* Create perspective for 3D effect */
+
+}
+
+/* CSS to style the rotating football */
+.football {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 7s linear infinite; /* Rotate the football infinitely */
+}
+
+/* CSS to style each side of the football */
+.football-side {
+    width: 50%; /* Each side takes 50% of the width */
+    height: 100%;
+    position: absolute;
+    background-color: transparent; /* Background color for the "football" */
+    border-radius: 50%; /* Create a circular shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(0deg);
+    transition: 7s;
+    backface-visibility: hidden; /* Hide the back face of the football */
+}
+
+.football-side:nth-child(2) {
+    transform: rotateY(180deg);
+}
+
+.football-side img {
+    width: 90%; /* Adjust the image size to fit inside the circle */
+    border-radius: 50%; /* Clip the image to match the circular shape */
+}
+
+/* CSS animation for rotating the football */
+@keyframes rotate {
+    0%, 100% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+}
+
+
+
+
+
+
+
+.History .row .content h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.History .row .content p {
+  font-size:  1.6rem;
+  color: #ccc;
+  padding: 1rem 0;
+  line-height:1.8 ;
+}
+
+/* CSS for the footer */
+/* CSS for the footer */
+footer {
+  background-color: #1e1e1f;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: static; /* Ndryshimi i pozicionit në "static" për të vendosur footer-in në fund të dokumentit */
+  width: 100%;
+  opacity: 0; /* Në fillim e fshehëm footer-in */
+  transition: opacity 0.5s; /* Animacioni i shfaqjes */
+}
+
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-navigation ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-navigation li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.contact-info p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.subscribe-section p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.subscribe-section form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.subscribe-section input[type="email"] {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.subscribe-section label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.subscribe-section textarea {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.subscribe-section button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
