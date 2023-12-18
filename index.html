@@ -1,28 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/stlyes.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 <body>
     <header>
-        <a href="#"><img src="logo.jpg" alt="Logo e Kombetarja blog" id="logo"></a>
-        <nav>
-          <ul>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Statistics</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        
-            
+        <a href="#" id="logo-container">
+            <img src="logo.jpg" alt="Logo e Kombetarja blog" id="logo">
+        </a>
+
+
+ 
+
+        <nav id="myNav">
+
+           
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#statistika1">Statistics</a></li>
+                <li><a href="#predictions">Predictions</a></li>
+                <li><a href="#news-section">News</a></li> 
+                 <li><a href="#team"> National team</a></li>
+                <li><a href="#Records">Records </a></li>
+                <li><a href="#OnlineShop">Shop </a></li>
+                
+               
+            </ul>
         </nav>
     </header>
+        <script>
+            function toggleNav() {
+        var nav = document.getElementById("myNav");
+        nav.classList.toggle("visible");
+      }
+      
+      
+      
+      
+    </script>
+    </header>
+
+
+
 
     <div class="banner">
         <div class="slideshow">
           <img class="slide" src="images/shq.jpg" alt="Image 1">
+          <img class="slide" src="images/ban.jpg" alt="Image 3">
+          
+          <img class="slide" src="images/banne.jpg" alt="Image 3">
           <img class="slide" src="images/I patitulluar.jpg" alt="Image 3">
+          <img class="slide" src="images/komb.jpg" alt="Image 3">
+         
         </div>
         
         <div class="banner-text">
@@ -32,77 +66,689 @@
             </div>
         </div>
     </div>
- <!-- Content below the banner -->
- <section class="History" id="History">
-  <h1 class="heading"><span>Our</span> History</h1>
-  <div class="row">
+
+
+ <div id="history">
+    <section class="History">
+     
+     <div class="row">
+     
+         <div class="football-container">
+           <div class="football">
+               <div class="football-side">
+                   <img src="images/alb.jpg" alt="">
+               </div>
+               <div class="football-side">
+                   <img src="images/alb3.jpg" alt="">
+               </div>
+           </div>
+       </div>
+   
     
-      <div class="football-container">
-        <div class="football">
-            <div class="football-side">
-                <img src="images/alb.jpg" alt="">
+       <div class="content">
+        <h1 class="heading"><span>Our</span> History</h1>
+       
+        <p>Albanian football, introduced in the early 20th century by missionaries, gained momentum with the establishment of the Football Association of Albania (FSHF) in 1930. The national team's notable successes include winning the Balkan Nations' Cup in 1946 and qualifying for UEFA Euro 2016. Clubs like KF Tirana and KF Flamutari Vlora have made impressions in European competitions. Despite challenges during the communist era, post-communism saw increased support from UEFA, fostering growth in Albanian football.</p>
+           <div class="button-box"></div>
+           <a href="informacion.html" target="_blank" class="btn">Learn More</a>
+
+        
+        
+    
+</div>
+</div>
+
+
+
+<div class='statistika1'>
+   
+    <div id='statistika1'> 
+    
+    
+            <h1 class="head">Latest round</h1>
+        
+        
+        <table class="football-table table-style">
+            <tr>
+                <th>Date</th>
+                <th>Home Team</th>
+                <th></th>
+                <th>Away Team</th>
+                <th></th>
+                <th>Score</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>2023-07-09</td>
+                <td>Czech Republic</td>
+                <td><img src="images/cekia.png" alt="republika Ceke" class="logo"></td>
+                <td>Albania</td>
+                <td><img src="images/albania.jpg" alt="Albania" class="logo"></td>
+                <td>1-1</td>
+                <td>Draw</td>
+            </tr>
+            <tr>
+                <td>2023-10-09</td>
+                <td>Albania</td>
+                <td><img src="images/albania.jpg" alt="albania" class="logo"></td>
+                <td>Polonia</td>
+                <td><img src="images/polonia.png" alt="Polonia" class="logo"></td>
+                <td>2-0</td>
+                <td>Win</td>
+            </tr>
+    
+            <tr>
+                <td>2023-12-10</td>
+                <td>Albania</td>
+                <td><img src="images/albania.jpg" alt="albania" class="logo"></td>
+                <td>Republika Ceke</td>
+                <td><img src="images/cekia.png" alt="cekia" class="logo"></td>
+                <td>3-0</td>
+                <td>Win</td>
+            </tr>
+    
+            <tr>
+                <td>2023-17-11</td>
+                <td>Moldova</td>
+                <td><img src="images/moldavia.png" alt="moldova" class="logo"></td>
+                <td>Albania</td>
+                <td><img src="images/albania.jpg" alt="Albania" class="logo"></td>
+                <td>-</td>
+                <td></td>
+            </tr>
+    
+            <tr>
+                <td>2023-20-11</td>
+                <td>Albania</td>
+                <td><img src="images/albania.jpg" alt="albania" class="logo"></td>
+                <td>Faraoe Islands</td>
+                <td><img src="images/faraoe.png" alt="faraoe islands" class="logo"></td>
+                <td>-</td>
+                <td></td>
+            </tr>
+    
+    
+        </table>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+ <div class='statistika2'> 
+    
+
+    <h1 class="head">Standings</h1>
+    
+    <table class="Standings table-style">
+        <tr>
+            <th>No.</th>
+            <th></th>
+            <th>Team</th>
+            <th>P</th>
+            <th>GD</th>
+            <th>PTS</th>
+            
+
+        </tr>
+
+         <tr>
+            <td>1</td>
+            <td><img src="images/albania.jpg" alt="albania" class="logo"></td>
+            <td>Albania</td>
+            <td>6</td>
+            <td>8</td>
+             <td>13</td>
+         </tr>
+
+         <tr>
+            <td>2</td>
+            <td><img src="images/cekia.png" alt="republika Ceke" class="logo"></td>
+            <td>Czech Republic</td>
+            <td>6</td>
+            <td>3</td>
+             <td>11</td>
+         </tr>
+
+         <tr>
+            <td>3</td>
+            <td><img src="images/polonia.png" alt="polonia" class="logo"></td>
+            <td>Polonia</td>
+            <td>7</td>
+            <td>0</td>
+             <td>10</td>
+         </tr>
+
+         <tr>
+            <td>4</td>
+            <td><img src="images/moldavia.png" alt="moldavia" class="logo"></td>
+            <td>Moldova</td>
+            <td>6</td>
+            <td>0</td>
+             <td>9</td>
+         </tr>
+
+         <tr>
+            <td>5</td>
+            <td><img src="images/faraoe.png" alt="faraoe islands" class="logo"></td>
+            <td>Faraoe Islands</td>
+            <td>7</td>
+            <td>-11</td>
+             <td>1</td>
+         </tr>
+ </table>
+ 
+ 
+ <button onclick="sortStandingsByPoints('asc')">Sort by Points (Asc)</button>
+ <button onclick="sortStandingsByPoints('desc')">Sort by Points (Desc)</button>
+ 
+    </div>
+</div>
+
+
+
+    <div class="predictions">
+        <div id="predictions">
+        <h2 class="head">Predict Matches</h2>
+
+        <table class="predictions-table table-style">
+            <tr>
+                <td>2023-20-11</td>
+                <td>Albania</td>
+                <td><img src="images/albania.jpg" alt="albania" class="logo"></td>
+                <td>Faroe Islands</td>
+                <td><img src="images/faraoe.png" alt="faroe islands" class="logo"></td>
+                <td><input type="text" id="predictedScore1" placeholder="Predict score"></td>
+                <td><button onclick="comparePredictedResult(1)">Compare</button></td>
+            </tr>
+
+            <tr>
+                <td>2023-17-11</td>
+                <td>Moldova</td>
+                <td><img src="images/moldavia.png" alt="moldova" class="logo"></td>
+                <td>Albania</td>
+                <td><img src="images/albania.jpg" alt="albania" class="logo"></td>
+                <td><input type="text" id="predictedScore2" placeholder="Predict score"></td>
+                <td><button onclick="comparePredictedResult(2)">Compare</button></td>
+            </tr>
+        </table>
+    </div>
+    </div>
+
+
+
+
+
+        
+
+<div class="news-section">
+    <div id="news-section">
+
+    
+    <h2 class="head">Latest News</h2>
+
+    
+
+   
+
+    <div class="news-section-table">
+        <div class="news-article table-style">
+            <h3>Sukseset ndaj Polonisë, Çekisë & Bullgarisë / Shqipëria ngjitet tre vende në renditjen e FIFA-s për tetorin</h3>
+            <img src="images/news1.jpg" alt="News 1 Image">
+            
+            <a  href="https://fshf.org/sq/sukseset-ndaj-polonise-cekise-bullgarise-shqiperia-ngjitet-tre-vende-ne-renditjen-e-fifa-s-per-tetorin">Read More</a>
+        
+        </div>
+        <div class="news-article">
+            <h3>E pamposhtur! Shqipëria fiton edhe miqësoren me Bullgarinë</h3>
+            <img src="images/news2.jpg" alt="News 2 Image">
+            <a href="https://fshf.org/sq/e-pamposhtur-shqiperia-fiton-edhe-miqesoren-me-bullgarine/">Read more</a>
+        </div>
+        
+    </div>
+
+
+</div>
+</div>
+
+
+
+
+
+<div class="team">
+    <div id="team">
+<h1 class="head">National Team</h1>
+<div class="table-container table-style">
+
+    <table class="team-members" id="goalkeepersTable">
+        <tr>
+            <th>Goalkeepers</th>
+            
+            
+
+        </tr>
+
+
+
+        <tr>
+            <td>Etrit Berisha</td>
+            
+           
+           
+        </tr>
+        
+        <tr>
+             <td>Thomas Strakosha</td> 
+        </tr>
+       
+
+        <tr><td>Elhan Kastrati</td></tr>
+        <tr>
+            <td>Simon Simoni</td>
+        </tr>
+    </table>
+        
+
+    <table class="team-members" id="defendersTable">
+        <tr>
+            <th>Defenders</th>
+            
+            
+
+        </tr>
+
+
+
+        <tr>
+            <td>Elseid Hysaj</td>
+            
+           
+           
+        </tr>
+        
+        <tr>
+             <td>Ivan Balliu Campeny</td> 
+        </tr>
+       
+
+        <tr><td>Ardjan Ismajli</td></tr>
+        <tr>
+            <td>Berat Gjimshiti</td>
+        </tr>
+
+        <tr>
+            <td>Marash Kumbulla</td>
+        </tr>
+
+        <tr>
+            <td>Enea Mihaj</td>
+        </tr>
+
+        <tr>
+            <td>Frederic Veseli</td>
+        </tr>
+
+
+
+
+    </table>
+
+
+
+
+
+    <table class="team-members" id="MidfielderTable">
+        <tr>
+            <th>Midfielder</th>
+            
+            
+
+        </tr>
+
+
+
+        <tr>
+            <td>Amir Abrashi</td>
+            
+           
+           
+        </tr>
+        
+        <tr>
+             <td>Klaus Gjasula</td> 
+        </tr>
+       
+
+        <tr><td>Enis Qokaj</td></tr>
+        <tr>
+            <td>Qazim Laci</td>
+        </tr>
+
+        <tr>
+            <td>Odise Roshi</td>
+        </tr>
+
+        <tr>
+            <td>Endri Cekici</td>
+        </tr>
+
+        <tr>
+            <td>Nedim Bajrami</td>
+        </tr>
+
+        <tr>
+            <td>Kristjan Asllani</td>
+        </tr>
+
+
+
+        
+
+
+
+
+    </table>
+
+
+
+
+    <table class="team-members" id="ForwardTable">
+        <tr>
+            <th>Forward</th>
+            
+            
+
+        </tr>
+
+
+
+        <tr>
+            <td>Ernest Muci</td>
+            
+           
+           
+        </tr>
+        
+        <tr>
+             <td>Taulant Seferi</td> 
+        </tr>
+       
+
+        <tr><td>Armando Broja</td></tr>
+        <tr>
+            <td>Sokol Cikalleshi</td>
+        </tr>
+
+        <tr>
+            <td>Myrto Uzuni</td>
+        </tr>
+
+        <tr>
+            <td>Giacomo Vrioni</td>
+        </tr>
+
+        <tr>
+            <td>Armando Sadiku</td>
+        </tr>
+
+        <tr>
+            <td>Jasir Asani</td>
+        </tr>
+
+
+    </table>
+
+    <table class="team-members">
+
+        <tr>
+            <th>Coach</th>
+        </tr>
+        <tr>
+            <td>Sylvio Mendes Campos Junior</td>
+        </tr>
+
+    </table>
+        
+</div>
+</div>
+
+<script>
+    function changeTableHeaderColor() {
+        const tables = document.querySelectorAll('.team-members');
+    
+        tables.forEach((table) => {
+            const thElements = table.querySelectorAll('th');
+    
+            thElements.forEach((th) => {
+                const isBlack = Math.random() < 0.5; // Determine whether to use black or red
+                const color = isBlack ? '#000' : '#ff0000'; // Use black if true, red if false
+                th.style.color = color;
+            });
+        });
+    }
+    
+    // Call the function every 3 seconds (3000 milliseconds)
+    setInterval(changeTableHeaderColor, 1500);
+    </script>
+
+
+
+<script>
+// Add click event listeners to all tables with the 'team-members' class
+const tables = document.querySelectorAll(".team-members");
+tables.forEach((table) => {
+    table.addEventListener("click", openFullScreen);
+});
+
+// Function to open a table in full screen
+function openFullScreen(event) {
+    // Get the table that was clicked
+    const table = event.currentTarget;
+    
+    // Toggle the full-screen class for the clicked table
+    table.classList.toggle("full-screen");
+
+    // Close other full-screen tables
+    tables.forEach((otherTable) => {
+        if (otherTable !== table && otherTable.classList.contains("full-screen")) {
+            otherTable.classList.remove("full-screen");
+        }
+    });
+}
+
+// Close full-screen tables when clicking outside
+window.addEventListener("click", function (event) {
+    if (!event.target.classList.contains("team-members")) {
+        tables.forEach((table) => {
+            table.classList.remove("full-screen");
+        });
+    }
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Records -->
+<div id="Records">
+    <section class="Records">
+        <h1>RECORDS</h1>
+        <div class="record-frames">
+            <div class="top-row">
+                <div class="record-frame">
+                    <a href="lorik.html" target="_blank">
+                        <img src="images/Lorik.jpg" alt="Lorik Cana">
+                        <div class="image-text">Lorik Cana</div>
+                        <p>Caps:93<br>Goals:1<br>Period:2003-2016</p>
+                    </a>
+                </div>
+                <div class="record-frame">
+                    <a href="elseid.html">
+                        <img src="images/elseid.png" alt="Image 2">
+                        <div class="image-text">Elseid Hysaj</div>
+                        <p>Caps:80<br>Goals:2<br>Period:2013-present</p>
+                    </a>
+                </div>
+                <div class="record-frame">
+                    <a href="etrit.html">
+                        <img src="images/etrit.webp" alt="Image 3">
+                        <div class="image-text">Etrit Berisha</div>
+                        <p>Caps:79<br>Goals:0<br>Period:2012-present</p>
+                    </a>
+                </div>
             </div>
-            <div class="football-side">
-                <img src="images/alb3.jpg" alt="">
+            <div class="bottom-row">
+             
+                <div class="record-frame">
+                    <img src="images/erjon.png" alt="Image 4">
+                    <div class="image-text">Erjon Bogdani</div>
+                    <p>Goals:18<br>Caps:75<br>Average:0,24<br>Period:1996-2013</p>
+                </div>
+                <div class="record-frame">
+                    <img src="images/alban.jpg" alt="Image 5">
+                    <div class="image-text">Alban Bushi</div>
+                    <p>Goals:14<br>Caps:67<br>Average:0,21<br>Period:1995-2007</p>
+                </div>
+                <div class="record-frame">
+                    <img src="images/ervin.jpg" alt="Image 6">
+                    <div class="image-text">Ervin Skelana</div>
+                    <p>Goals:13<br>Caps:75<br>Average:0,17<br>Period:2000-2011</p>
+                </div>
             </div>
         </div>
+    </section>
+
+
+    <div id="OnlineShop">
+        <section class="OnlineShop">
+            <h1>ONLINE SHOP</h1>
+            <p>Find everything that belongs to the red and black team. <br> <a href="https://fshf.org/shop/">VISIT THE SHOP</a></p>
+            <img class="dyqan" src="images/bluza.jpg" alt="">
+            
+        </section>
     </div>
     
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="col-1">
+                <h5>NAVIGATE</h5>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#statistika1">Statistics</a></li>
+                    <li><a href="#predictions">Predictions</a></li>
+                    <li><a href="#news-section">News</a></li> 
+                     <li><a href="#team"> National team</a></li>
+                    <li><a href="#Records">Records </a></li>
+                    <li><a href="#OnlineShop">Shop </a></li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <h5>STAY CONNECTED </h5>
+                <form>
+                    <input type="email" placeholder="Your email Address" required>
+                    <div class="email-box">
+                        <button>Subscribe Now</button>
+                      </div>
+                      
+                    
+                 
+                </form>
+               
+                    
+                
+            </div>
+            <div class="col-3">
+                <h5>CONTACT</h5>
+                <p>+35542 346 601<br>Rr. Liman Kaba, Nd 5, Hyrja 1,<br>Tirana, Albania</p>
+            </div>
+            <div class="col-4">
+                <h5>FOLLOW US</h5>
+                <ul class="social-icons">
+                    <li><a href="https://twitter.com/fshforg?lang=en" target="_blank" class="fab fa-twitter"></a></li>
+                    <li><a href="https://www.facebook.com/FederataShqiptareeFutbollit/?locale=sq_AL" target="_blank" class="fab fa-facebook"></a></li>
+                    <li><a href="https://www.instagram.com/fshforg/?hl=en" target="_blank" class="fab fa-instagram"></a></li>
+                </ul>
+            </div>
+            
     
-      <div class="content">
-          <h2>From Early Beginnings to International Success</h2>
-          <p>Albanian Football has a rich history dating back to the early 20th century when it was introduced by Christian missionaries in Shkodër. 
-            The establishment of the Football Association of Albania (FSHF) in 1930 marked a pivotal moment, and the country gained FIFA and UEFA affiliation.
-             The national team has achieved notable successes, including winning the Balkan Nations' Cup in 1946 and qualifying for the UEFA Euro 2016. 
-             Albanian clubs, such as KF Tirana and KF Flamutari Vlora, have also made their mark in European competitions, reaching the Round of 16. Despite political obstacles during the communist era, the post-communist era has seen increased participation and support from UEFA, contributing to the growth and development of Albanian football.</p>
-          <a href="#" class="btn">Learn more</a>
-          <div id="additional-info" style="display: none;">
-            <p><em>Early Beginnings:</em> Football was introduced to Albania by Christian missionaries who played the sport in Shkodër in the early 20th century. The game quickly gained popularity among locals, paving the way for the establishment of organized football in the country.</p>
-            <p><em>Founding of FSHF:</em> In 1930, the Football Association of Albania (FSHF) was founded, representing a pivotal moment in the development of Albanian football. This laid the groundwork for future growth and international recognition.</p>
-            <p><em>International Recognition:</em> Albania's affiliation with FIFA in 1932 marked its official entry into the international football community. It allowed the Albanian national team to participate in various competitions and fostered a sense of national pride.</p>
-            <p><em>Historic Successes:</em> One of the early highlights in Albanian football was the national team's victory in the Balkan Nations' Cup in 1946. This achievement solidified Albania's reputation in regional football.</p>
-            <p><em>UEFA Membership:</em> In 1954, the FSHF became a founding member of the Union of European Football Associations (UEFA). This membership opened doors to more European competitions and opportunities for Albanian clubs and the national team.</p>
-            <p><em>UEFA Euro 2016 Qualification:</em> Albania's historic qualification for the UEFA Euro 2016 was a remarkable achievement. The national team's journey through the qualifiers and their presence in the tournament captured the hearts of football fans worldwide.</p>
-            <p><em>Club Success in Europe:</em> Albanian clubs, including KF Tirana and KF Flamutari Vlora, made significant progress in European competitions. Their appearances in the Round of 16 in various tournaments showcased the quality of Albanian football on a broader stage.</p>
-            <p><em>Challenges and Resilience:</em> Despite political obstacles during the communist era, Albanian football persevered. Clubs occasionally faced politically-motivated withdrawals and bans from UEFA, but their resilience and commitment to the sport remained unwavering.</p>
-            <p><em>Post-Communist Era:</em> The post-communist era saw a new era of development for Albanian football, with increased support from UEFA. This support played a vital role in the growth and modernization of the sport in the country, enabling Albanian clubs and the national team to compete more effectively on the international stage.</p>
-          </div>
-          
-          
-  </div>
-</div>
-</section>
-<footer>
-  <div class="footer-content">
-    <div class="footer-navigation">
-        <h4>Navigate</h2>
-      <ul>
-        <li><a href="#">Navigate</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Statistics</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Calendar</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-    <div class="contact-info">
-      <p>Phone: 06666666</p>
-      <p>Email: info@.com</p>
-    </div>
-    <div class="subscribe-section">
-      <p>Get the freshest football news</p>
-      <form>
-        <input type="email" placeholder="Your email here">
-        <label>
-          <input type="checkbox"> By checking the box, you agree that you are at least 16 years of age
-        </label>
-        <textarea placeholder="Your address here"></textarea>
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
-  </div>
-</footer>
+            
+        </footer>
+>
+
+
+<script>
+    // Function to automatically highlight the first team with Albanian flag colors (divided in half)
+    function autoHighlightFirstStandingTeam() {
+        const standingsTable = document.querySelector(".Standings");
+        const rows = standingsTable.querySelectorAll("tr");
+
+        // Reset background colors and text colors for all rows
+        rows.forEach((row) => {
+            row.style.background = "";
+            row.style.color = "";
+        });
+
+        // Define the Albanian flag colors
+        const redColor = "red";
+        const blackColor = "black";
+        const whiteColor = "white";
+
+        // Highlight the first team
+        rows[1].style.background = `linear-gradient(to right, ${redColor} 50%, ${blackColor} 50%)`;
+;
+        rows[1].style.color = whiteColor;
+    }
+
+    // Automatically call the function when the page is loaded
+    window.onload = autoHighlightFirstStandingTeam;
+</script>
   
-<script src="javascript/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,501 @@
+
+
+body {
+  font-family: 'Times New Roman', serif;
+  color: #ffffff;
+  background-image: radial-gradient(circle, #714444, #713a39, #702f2e, #6f2422, #6c1816, #631114, #5b0a11, #52030d, #400711, #2e0a10, #1d060b, #000000);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Basic styles for the navigation bar */
+header {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2; 
+  
+}
+
+
+
+
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+nav li {
+  background: transparent; /* Ngjyra transparente */
+  color: #ebebf0;
+  border: 1px solid #fff; /* Kufijtë të bardhë */
+  padding: 1px 15px;
+  cursor: pointer;
+  border-radius: 10px;
+  display: inline;
+  margin-right: 30px;
+}
+nav li:hover {
+  background: #84b2f6;
+  color: #000; 
+}
+
+/* Show the square background on hover */
+.nav li:hover::before {
+  width: 100%; 
+}
+
+/* CSS to adjust the logo's size */
+#logo {
+  width: 100px;
+  height: auto;
+}
+.header-section h1 {
+  position: absolute;
+  top: 40%; /* Adjust to center the heading vertically */
+  left: 45%; /* Adjust to center the heading horizontally */
+  transform: translate(-45%, -50%); /* Center the heading properly */
+  font-family: Georgia, serif;
+  font-size: 35px; 
+  white-space: nowrap; /* Prevent the text from wrapping */
+  width: 100%;
+  
+}
+p {
+  line-height: 1.6; /* Adjust the line height for better readability */
+  color: azure;
+  font-size: 1.2rem;
+}
+i
+.LEARN {
+  padding: 20px; /* Add padding to the content area */
+  
+  border-radius: 10px; /* Add rounded corners to the content area */
+  max-width: 800px; 
+  margin: 20px auto;
+}
+
+.my-image {
+  width: 18%; 
+  height: auto; 
+  margin-top: 1%;
+  margin-left: 25%;
+ 
+}
+.histo{
+  padding: 15px;
+}
+.preza {
+ 
+  position: absolute;
+  top: 20%;
+  right: 25%;
+  background: rgba(63, 70, 78, 0.5);
+  color: #fff;
+}
+h4{
+  font-size: 35px;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.bluza {
+  position: relative;
+  
+  padding: 15px;
+}
+
+
+
+.image {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 200px;
+  float: right; /* Vendos imazhin në të djathtë */
+}
+
+
+
+
+
+
+
+
+
+
+/* Resetimi i marginave dhe padding-ut në të gjitha elementët */
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Stilizimi i footer-it */
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-1,
+.col-2,
+.col-3 {
+  flex: 2;
+  padding: 20px;
+  font-size:20px ;
+}
+
+h5 {
+  font-size: 30px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+  
+}
+
+ul li {
+  margin-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.email-box button {
+  background: transparent; 
+  color: #ebebf0;
+  border: 1px solid #fff; 
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.email-box button:hover {
+  background: #84b2f6; 
+  color: #000;
+}
+
+p {
+  font-size: 20px;
+}
+
+.col-2 {
+  margin-right: 90px; /* Add margin to the right to create space between columns */
+}
+
+.col-3 {
+  margin-left: 70px; /* Add margin to the left to create space between columns */
+}
+
+.col-4 {
+  margin-top: 20px;
+
+ margin-right: 50px;
+}
+
+
+
+
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-top: 25px;
+}
+
+.social-icons li {
+  margin-right: 40px; 
+}
+
+.fab.fa-twitter {
+  color: #1DA1F2; /* Twitter color */
+}
+
+.fab.fa-facebook {
+  color: #3b5998; /* Facebook color */
+}
+
+.fab.fa-instagram {
+  color: #C13584; /* Instagram color */
+}
+
+/* Additional properties to refine the appearance of icons */
+.fab {
+  font-size: 24px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*faqja per lorkikun*/
+.text-info{
+padding: 15px;
+}
+.responsive-image {
+  width: 33%; 
+  height: auto; 
+  margin-top: 1%;
+  margin-left: 13%;
+ 
+}
+.stats {
+ 
+  position: absolute;
+  top: 20%;
+  right: 13%;
+  background: rgba(69, 71, 73, 0.5);
+  color: #fff;
+  padding: 15px;
+ 
+}
+
+table {
+  border-collapse: collapse; /* Fshihe hapësirat midis kutiveve */
+  width: 50%; /* Gjërësia e tabelës */
+  margin-left: 15px;
+}
+
+th, td {
+  border: 1px solid #b1acac; 
+  padding: 8px; /* Hapësira e brendshme e qelizave */
+  text-align: left; /* Vendosja e tekstit në të majtë */
+ 
+}
+
+th {
+  background-color: #000000; /* Ngjyra e sfondit të qelizës së kokës së tabelës */
+}
+
+
+h2{
+  margin-top: 5%;
+  margin-bottom: 1%;
+}
+em {
+  font-style: italic; 
+}
+
+strong {
+  font-weight: bold; 
+}
+
+
+
+
+/*faqja per elseid*/
+.info{
+  padding: 15px;
+}
+
+img {
+  width: 36%; 
+  height: auto; 
+  margin-top: 1%;
+  margin-left: 15%;
+ 
+}
+.dhena {
+ 
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  background: rgba(59, 70, 82, 0.5);
+  color: #fff;
+}
+.highlight {
+  background-color: rgba(75, 60, 62, 0.5); 
+  padding: 8px; 
+}
+
+.tro{
+  padding: 15px;
+}
+h2{
+  padding: 15px;
+}
+.fot{
+  position: relative;
+  
+  padding: 15px;
+}
+
+
+
+.fotoo {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 300px;
+  float: right; /* Vendos imazhin në të djathtë */
+  margin-top: -500px;
+  margin-right: 20%;
+}
+
+
+/*faqja e etritit*/
+.informacion{
+  padding: 15px;
+}
+.res-image {
+  width: 30%; 
+  height: auto;
+  margin-top: 1%;
+  margin-left: 17%;
+ 
+}
+.pers {
+ 
+  position: absolute;
+  top: 20%;
+  right: 22%;
+  background: rgba(59, 70, 82, 0.5);
+  color: #fff;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+
+  .banner .banner-text {
+    top: 70%;
+    left: 50%;
+  }
+
+  .banner .banner-text h1 {
+    font-size: 2rem; 
+  }
+
+  .footer-content {
+    flex-direction: column; 
+   
+  }
+ 
+
+  .social-icons li {
+    margin-left: 5%; }
+    .col-1{
+      margin-left: 12%; 
+    }
+  .col-3{
+    margin-left: 12%; 
+  }
+    .col-2 {
+      margin-left: 12%; 
+    }
+ 
+    .col-4{margin-left: 15%; }
+   
+.image {
+  
+  width: 100px;
+  
+}
+.my-image {
+  width: 50%; 
+  margin-left: 20%; 
+}
+
+.preza {
+  position: relative; 
+  top: 0;
+  right: 0;
+}
+img {
+  width: 80%; 
+  margin-left: 10%; 
+}
+
+.dhena {
+  position: static; /* Change position to static for normal flow on smaller screens */
+  margin-top: 1%; /* Add margin for spacing */
+  margin-left: 0;
+  background: rgba(59, 70, 82, 0.5);
+  color: #fff;
+}
+.fotoo {
+ 
+  margin-top: 10px;
+  margin-right: 10%;
+  width: 150px;
+}
+
+.responsive-image{
+  width: 80%;
+  margin-left: 10%; 
+
+}
+
+.stats {
+  position: static; /* Change position to static for normal flow on smaller screens */
+  margin-top: 1%; /* Add margin for spacing */
+  margin-left: 0; /* Remove margin for smaller screens */
+  background: rgba(59, 70, 82, 0.5);
+  color: #fff;
+}
+.res-image{
+  width: 80%;
+  margin-left: 10%; 
+}
+.pers{
+  position: static; /* Change position to static for normal flow on smaller screens */
+  margin-top: 1%; /* Add margin for spacing */
+  margin-left: 0; /* Remove margin for smaller screens */
+  background: rgba(59, 70, 82, 0.5);
+  color: #fff;
+  font-size: 15px;
+
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  overflow-x: auto; /* Add horizontal scroll on smaller screens */
+}
+th, td {
+  font-size: 8px; /* Adjust font size for better fit on small screens */
+}
+h2{
+  font-size: 20px;
+}
+
+}

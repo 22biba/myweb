@@ -1,0 +1,1042 @@
+/* Basic styles for the navigation bar */
+header {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2; 
+
+}
+
+
+
+
+
+nav a {
+  position: relative;
+  text-decoration:solid;
+  transition: background-color 0.3s, color 0.3s;
+  color: #ffffff;
+}
+
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0
+  display
+}
+
+
+
+
+nav li {
+  background: transparent; /* Ngjyra transparente */
+  color: #efefef;
+  border: 1px solid #fff; /* Kufijtë të bardhë */
+  padding: 1px 15px;
+  cursor: pointer;
+  border-radius: 10px;
+  display: inline;
+  margin-right: 30px;
+}
+nav li:hover {
+  background: #84b2f6; /* Ngjyra e bardhë kur kalon mbi butonin */
+  color: #000; /* Ngjyra e tekstit kur kalon mbi butonin */
+}
+
+/* Show the square background on hover */
+.nav li:hover::before {
+  width: 100%; /* Expand the width to 100% on hover */
+}
+
+
+#logo {
+  width: 80px;
+  height: auto;
+}
+
+
+.banner {
+  text-align: center;
+  
+  position: relative;
+  object-fit: cover ;
+ 
+  z-index: 1; /* Overlay content on top of the slideshow */
+}
+
+.slideshow {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 800px; 
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease;
+    
+}
+
+.slide:not(:first-child) {
+    opacity: 0;
+}
+
+.banner .banner-text {
+  text-align: center;
+  font-family: Georgia, serif;
+  color: white; /* Text color */
+  
+  position: absolute;
+  top: 70%;
+  left: 23%;
+  transform: translate(-50%, -50%); /* Position the text box */
+  z-index: 2; /* Overlay text on top of the slideshow */
+}
+
+
+/* Styling for Banner Heading */
+.banner .banner-text h1 {
+  font-style: bold; 
+  font-size: 2.8rem;
+}
+
+.banner .banner-text p {
+  font-style: bold;  
+  font-size: 1.5rem;
+}
+
+/* Styling for General Heading */
+.heading {
+  text-align: center;
+  color: transparent;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  font-size: 4rem;
+  margin-top: 10px;
+  margin-left: 50px;
+  background-image: radial-gradient(circle, #e61515, #d43732, #be4b48, #a55a59, #876666);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: Georgia, serif;
+}
+
+/* Styling for Heading Span */
+.heading span {
+  color: transparent;
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-family: Georgia, serif;
+}
+
+/* Styling for Button Box */
+.button-box {
+  text-align: center; /* Place the button in the center of the paragraph */
+  margin-top: 20px; /* Add spacing from the top */
+}
+
+/* Styling for Button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #363333; /* Button background color */
+  color: #fff; /* Button text color */
+  text-decoration: none;
+  border-radius: 5px; /* Button shape */
+}
+
+/* Styling for History Row */
+.History .row {
+  display: flex;
+  align-items: center;
+  background-image: radial-gradient(circle, #714444, #713a39, #702f2e, #6f2422, #6c1816, #631114, #5b0a11, #52030d, #400711, #2e0a10, #1d060b, #000000);
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+/* Styling for History Image Container */
+.History .row .image {
+  flex: 1;
+  padding: 2rem; 
+}
+
+/* Styling for History Image */
+.History .row .image img {
+  width: 100%;
+}
+
+/* Styling for History Content Container */
+.History .row .content {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Styling for Content Paragraph */
+.content p {
+  text-align: justify; 
+  margin-top: 0; /* Remove the top margin for the paragraph */
+}
+
+/* Styling for Football Container */
+.football-container {
+  width: 650px; 
+  height: 650px;
+  perspective: 1000px; /* Create perspective for 3D effect */
+}
+
+/* Styling for Football Animation */
+.football {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate 7s linear infinite; /* Rotate the football infinitely */
+}
+
+/* Styling for Football Sides */
+.football-side {
+  width: 80%; /* Each side takes 50% of the width */
+  height: 100%;
+  position: absolute;
+  background-color: transparent; /* Background color for the "football" */
+  border-radius: 20%; /* Create a circular shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(0deg);
+  transition: 9s;
+  backface-visibility: hidden; 
+}
+
+.football-side:nth-child(2) {
+  transform: rotateY(180deg);
+}
+
+/* Styling for Football Side Image */
+.football-side img {
+  width: 90%; /* Adjust the image size to fit inside the circle */
+  border-radius: 50%; /* Clip the image to match the circular shape */
+}
+
+/* CSS animation for rotating the football */
+@keyframes rotate {
+  0%, 100% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+}
+
+
+
+
+
+.History .row .content h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.History .row .content p {
+  font-size:  1.6rem;
+  color: #fff;
+  padding: 1rem 0;
+  line-height:1.8 ;
+}
+
+
+
+
+
+/* Resetting margins, padding, and box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Styling for the footer */
+footer {
+  background-color: #000000;  /* Background color of the footer */
+  color: #fff;               /* Text color of the footer */
+  padding: 50px;             /* Padding around the content in the footer */
+}
+
+/* Styling for the content layout in the footer */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styling for individual columns in the footer */
+.col-1,
+.col-2,
+.col-3 {
+  flex: 2;             /* Each column takes up equal space */
+  padding: 20px;       /* Padding around the content in each column */
+  font-size: 20px;     /* Font size of text in each column */
+}
+
+/* Styling for heading elements */
+h5 {
+  font-size: 30px;      /* Font size for h5 elements */
+}
+
+/* Styling for unordered list */
+ul {
+  list-style: none;     /* Removing default list styles */
+  padding: 0;
+  margin-top: 50px;     /* Top margin for the unordered list */
+}
+
+/* Styling for list items in the unordered list */
+ul li {
+  margin-bottom: 40px;  /* Bottom margin for each list item */
+}
+
+/* Styling for anchor (link) elements */
+a {
+  text-decoration: none; /* Removing underline from links */
+  color: #fff;           /* Text color for links */
+}
+
+/* Styling for email input field */
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 50px;   /* Bottom margin for the email input field */
+  margin-top: 50px;      /* Top margin for the email input field */
+}
+
+/* Styling for the email subscription button and its hover effect */
+.email-box button {
+  background: transparent; /* Transparent background color for the button */
+  color: #ebebf0;         /* Text color for the button */
+  border: 1px solid #fff; /* White border for the button */
+  padding: 10px 20px;     /* Padding for the button */
+  cursor: pointer;
+  border-radius: 10px;    /* Border radius for rounded corners */
+}
+
+.email-box button:hover {
+  background: #84b2f6;    /* Background color on hover */
+  color: #000;            /* Text color on hover */
+}
+
+/* Styling for paragraph elements */
+p {
+  font-size: 20px;        /* Font size for paragraph elements */
+}
+
+/* Adjusting margin-left for col-2 for additional spacing */
+.col-2 {
+  margin-left: 80px;      /* Adding space between "CONTACT" and the address */
+}
+
+/* Adjusting top margin for paragraph in col-3 */
+.col-3 p {
+  margin-top: 30px;       /* Top margin for the paragraph in col-3 */
+}
+
+/* Adjusting top margin for col-4 */
+.col-4 {
+  margin-top: 20px;       /* Top margin for col-4 */
+}
+
+/* Styling for social icons */
+.social-icons {
+  list-style: none;       /* Removing default list styles for social icons */
+  padding: 0;
+  display: flex;
+  margin-top: 25px;       /* Top margin for the social icons */
+}
+
+/* Styling for individual social icons with margin-right */
+.social-icons li {
+  margin-right: 40px;     /* Adjusting spacing between social icons */
+}
+
+/* Styling for Twitter icon */
+.fab.fa-twitter {
+  color: #1DA1F2;          /* Twitter icon color */
+}
+
+/* Styling for Facebook icon */
+.fab.fa-facebook {
+  color: #3b5998;          /* Facebook icon color */
+}
+
+/* Styling for Instagram icon */
+.fab.fa-instagram {
+  color: #C13584;          /* Instagram icon color */
+}
+
+/* Additional properties for refining the appearance of icons */
+.fab {
+  font-size: 24px;         /* Adjusting the size of the icons */
+}
+
+
+/* Adjust color for each social media icon */
+.fab.fa-twitter {
+  color: #1DA1F2; /* Twitter color */
+}
+
+.fab.fa-facebook {
+  color: #3b5998; /* Facebook color */
+}
+
+.fab.fa-instagram {
+  color: #C13584; /* Instagram color */
+}
+
+
+.fab {
+  font-size: 24px;
+}
+
+  
+  body {
+    
+    text-align: center;
+  }
+
+
+ 
+
+  .head{
+    text-align: center;
+  color: transparent;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  font-size: 3rem;
+  margin-top: 10px;
+  margin-left: 50px;
+  background-image: radial-gradient(circle, #e61515, #d43732, #be4b48, #a55a59, #876666);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: Georgia, serif;
+  }
+  
+ .news{
+  margin: 0;
+  padding: 10px;
+ }
+
+ body .statistika1 .statistika2, .predictions,  .team{ 
+    margin: 0;
+    padding: 10px;
+    
+
+  
+    flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+  background-image: radial-gradient(circle, #714444, #713a39, #702f2e, #6f2422, #6c1816, #631114, #5b0a11, #52030d, #400711, #2e0a10, #1d060b, #000000);
+}
+
+
+body .statistika1,
+body .statistika2,
+
+body .news-section {
+  margin: 0;
+  padding: 10px;
+
+}
+
+
+
+.statistika1, .statistika2{
+  background-image: radial-gradient(circle, #714444, #713a39, #702f2e, #6f2422, #6c1816, #631114, #5b0a11, #52030d, #400711, #2e0a10, #1d060b, #000000);
+}
+
+
+
+  /* CSS to style the logos */
+  .logo {
+    max-width: 30px; /* Adjust the max-width as needed */
+    max-height: 30px; /* Adjust the max-height as needed */
+  }
+
+
+
+/* Style for all tables */
+.table-style {
+
+  font-family: Georgia, serif;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 800px;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto; /* Add margin for spacing */
+  overflow: hidden; /* Hide overflow for a cleaner look */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.table-style table{
+width: 100%;
+border-collapse: collapse;
+background-color: #ffffff;
+border-radius: 10px; /* Add rounded corners */
+overflow: hidden; /* Hide overflow for a cleaner look */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+/* Common style for table headers and cells */
+/* Style for headers of all tables */
+.table-style th {
+  background-color: #9f9b9b;
+    padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ffffff; /* Add bottom border between cells */
+}
+
+.table-style td {
+  
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ffffff; /* Add bottom border between cells */
+}
+
+
+
+/* Style for even rows in all tables */
+.table-style tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect for all tables */
+.table-style tr:hover {
+  background-color: #e0e0e0;
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+.news-article {
+  width: calc(30% - 20px);
+  margin: 20px;
+  padding: 15px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #f9f9f9; /* Light background color */
+  border: 1px solid #e0e0e0; /* Light border color */
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effect */
+  height: 350px; /* Fixed height for consistent size */
+}
+
+.news-article:hover {
+  transform: translateY(-5px); /* Lift the article slightly on hover */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+}
+
+.news-article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Rounded corners for images */
+}
+
+.news-article h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.news-article p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.news-article a {
+  text-decoration: none;
+  color: #3498db; /* Link color */
+}
+
+.news-article a:hover {
+  text-decoration: underline; /* Underline link on hover */
+  color: #217dbb; /* Link color on hover */
+}
+ 
+ 
+/* Styles for the news section */
+.news-section {
+    flex-wrap: wrap;
+    height:1auto;
+    width: 100%;
+    background-image:  radial-gradient(circle, #714444, #713a39, #702f2e, #6f2422, #6c1816, #631114, #5b0a11, #52030d, #400711, #2e0a10, #1d060b, #000000);
+   background-size: cover;
+  background-repeat: no-repeat;
+}
+  
+  
+
+  .banner {
+ 
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+}
+
+
+
+
+
+
+
+
+
+.text-box {
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+
+
+.predictions {
+  border: 0px solid #ffffff; /* Add a border to separate the section */
+  margin: 0px 0; /* Add margin to create spacing above and below */
+  padding: 10px; /* Add padding for inner content spacing */
+}
+
+
+/* Container for the tables */
+.table-container {
+  display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between table pairs */
+    max-width:400px; /* Adjust the maximum width for each pair */
+    align-items: center;
+    text-align: center;
+  }
+
+
+  
+
+
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+.table-container{
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+.Records {
+  display: block;
+  background-image: radial-gradient(circle, #714444, #713a39, #702f2e, #6f2422, #6c1816, #631114, #5b0a11, #52030d, #400711, #2e0a10, #1d060b, #000000);
+  color: #fff;
+  
+}
+.Records h1 {
+  font-family: Georgia, serif;
+  font-size: 2.5rem;
+  background-image: radial-gradient(circle, #fd3b3b, #9c211c, #6e1d1a, #291716, #949292);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Hide the text color to show the gradient background */
+}
+
+
+/* Additional CSS */
+.main-photo {
+position: absolute;
+top: 0;
+right:0;
+width: 33.33%; 
+order: -1; /* Place it at the start */
+
+}
+
+.record-frames {
+display: flex;
+flex-wrap: wrap;
+
+}
+
+.record-frame {
+width: calc(33.33% - 20px);
+margin: 10px;
+overflow: hidden;
+position: relative;
+}
+
+.record-frame img {
+width: 55%;
+height: 100%;
+object-fit: cover;
+display: block;
+transition: transform 0.5s;
+margin-left: 20%;
+}
+
+.record-frame p {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 61%;
+padding: 8px;
+margin-left: 17%;
+
+background-color: rgba(59, 56, 56, 0.5);
+transform: translateY(100%);
+transition: transform 0.5s;
+opacity: 0;
+
+
+}
+
+.record-frame:hover img {
+transform: scale(1.1);
+}
+
+.record-frame:hover p {
+transform: translateY(0);
+opacity: 1;
+}
+
+
+.image-text {
+position: absolute;
+top: 0;
+left: 0;
+width: 55%;
+background-color: rgba(59, 56, 56, 0.5);
+color: white;
+text-align: center;
+padding: 8px;
+margin-left: 20%;
+
+}
+
+
+.top-row {
+display: flex;
+justify-content: space-between;
+}
+
+.record-frame {
+width: 30%; 
+margin: 10px;
+
+}
+
+.bottom-row {
+display: flex;
+justify-content: space-between;
+margin-top:20px;
+}
+
+/* faqja e shop*/
+
+.bluza {
+  position: relative;
+  
+  padding: 15px;
+}
+
+
+
+body {
+  font-family:   Georgia, serif;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+#OnlineShop {
+  /* Styles for the Online Shop section */
+  text-align: center;
+  background-image: radial-gradient(circle, #714444, #713a39, #702f2e, #6f2422, #6c1816, #631114, #5b0a11, #52030d, #400711, #2e0a10, #1d060b, #000000);
+  color: #fff;
+  padding: 80px;
+
+
+}
+
+.OnlineShop h1 {
+  /* Styles for the h1 inside Online Shop section */
+  background-image: radial-gradient(circle, #fd3b3b, #9c211c, #b33631, #65504f, #949292);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-right: 75%;
+  font-size: 2.5rem;
+  text-decoration-line: underline;
+}
+
+.OnlineShop p {
+  /* Styles for the paragraph inside Online Shop section */
+  text-align: left;
+  display: inline-block;
+  margin-right: 65%;
+  margin-top: 5%;
+  
+}
+
+.OnlineShop a {
+
+  display: inline-block;
+  padding: 10px;
+  
+
+  margin-right: 50%;
+ 
+
+  background: transparent; /* Ngjyra transparente */
+  color: #ebebf0;
+  border: 1px solid #fff; /* Kufijtë të bardhë */
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.OnlineShop a:hover{
+  background-color: #dd5d5d;
+}
+.dyqan {
+  /* Styles for the image */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width:180px;
+  float: right; /* Place the image on the right */
+  margin-top: -200px; /* Add margin-top to create space */
+  margin-right: 30%;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column; /* Reverse the order of items in column layout */
+  }
+    .toggle-container {
+        display: none;
+    }
+  
+  
+  /* Add this CSS to style the toggle container */
+  .toggle-container {
+    cursor: pointer;
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+  
+  
+  
+  /* Add this CSS to hide the logo on larger screens and initially hide the navigation */
+  .toggle-container img {
+    display: block;
+  }
+
+
+  nav.visible {
+    display: block;
+  }
+
+
+  .toggle-container.hidden img {
+    display: block;
+  }
+
+  nav.visible #logo-container {
+    margin-top: 10px; /* Adjust the margin to position the logo */
+  }
+  nav.visible ul {
+    margin-top: 10px; /* Adjust the margin to position the navigation items */
+  }
+
+  nav ul {
+    margin-top: 0; /* Remove margin to align the navigation items with the logo */
+  }
+
+  nav li {
+    display: block !important;
+    width: 100% !important;
+    clear: both !important;
+    box-sizing: border-box !important;
+    margin-bottom: 10px;
+  }
+  /* CSS to adjust the logo's size */
+#logo {
+  width: 100px;
+  height:auto;
+}
+
+
+
+.History .row .content p {
+  font-size:  1rem;
+ 
+}
+
+.content h1 {
+  font-size: 25px; 
+  margin-right: 20%;
+}
+.football-container {
+  display: none;
+}
+.banner img {
+  max-width: 100%;
+
+}
+  .banner .banner-text {
+    top: 70%;
+    left: 35%;
+  }
+
+  .banner .banner-text h1 {
+    font-size: 1.2rem; 
+  }
+  .banner .banner-text p{
+    font-size: 0.8rem;
+  }
+
+  .footer-content {
+    flex-direction: column; 
+  }
+ 
+
+  .social-icons li {
+    margin-left: 10%; }
+  
+    .col-2 {
+      margin-left: 12%; 
+    }
+    .OnlineShop h1,
+    .OnlineShop p,
+    .OnlineShop a,
+    .dyqan {
+      margin: 0; 
+    }
+  
+    #OnlineShop h1 {
+      font-size: 30px; 
+     
+      margin-right: 20%;
+     
+    }
+    .OnlineShop  p{
+      font-size: 15px;
+      margin-top: 5%;
+    }
+    .OnlineShop  a {
+      font-size: 13px; 
+      margin-top: 5%;
+    }
+    .dyqan{
+      width: 50%;
+
+    }
+  
+    .dyqan {
+      margin-top: 20px; 
+      margin-right: auto; 
+      float: none; /* The element does not float, (will be displayed just where it occurs in the text). This is default */
+    }
+    .record-frame {
+      width: 80%; 
+    }
+  
+    .record-frame img {
+      width: 100%; 
+      margin-left: 0; 
+    }
+  
+    .record-frame p {
+      width: 80%; 
+      margin-left: 0; /* Remove the left margin */
+    }
+  
+    .image-text {
+      width: 80%; /* Make image text take the full width */
+      margin-left: 0; /* Remove the left margin */
+    }
+  
+    .top-row,
+    .bottom-row {
+      flex-direction: column; /* Stack the record frames vertically */
+      align-items: center; /* Center align the content */
+    }
+    
+    .table-style {
+      font-size: 10px; 
+    }
+  
+    .table-style th, .table-style td {
+      padding: 6px;
+    }
+
+    .table-style {
+      overflow-x: auto; /* Enable horizontal scrolling */
+    }
+
+    .predictions-table td {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .predictions-table td img {
+      width: 50px; 
+      height: auto;
+    }
+  
+    .predictions-table input {
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 5px; 
+    }
+  
+    .predictions-table button {
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 5px; 
+    }
+ 
+
+  }    
+
+
+
+
+    
